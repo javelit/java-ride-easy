@@ -68,7 +68,7 @@ public class MyApp {
               </SyntaxHighlighter>
             </div>
           </div>
-          
+
           {/* Benefits */}
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
@@ -102,7 +102,16 @@ public class MyApp {
             </div>
           </div>
         </div>
-        
+
+        {/* Demo GIF */}
+        <div className="mt-12 flex justify-center">
+          <img
+            src="/demo_code.gif"
+            alt="Demo of the app in action"
+            className="rounded-lg shadow-soft max-w-full lg:max-w-2xl"
+          />
+        </div>
+
         {/* Get Started CTA */}
         <div className="mt-16 bg-primary rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-primary-foreground mb-4">

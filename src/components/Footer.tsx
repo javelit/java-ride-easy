@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-foreground">Jeamlit</span>
             </div>
             <p className="text-muted-foreground">
-              Build interactive data applications with Java, inspired by Streamlit's simplicity.
+              Build interactive data applications with Java in minutes.
             </p>
           </div>
           
@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">About</h3>
             <p className="text-muted-foreground text-sm">
-              Jeamlit brings the ease of Streamlit to Java developers, enabling rapid prototyping and deployment of data applications.
+              Jeamlit enables rapid prototyping and deployment of data applications in Java.
             </p>
           </div>
         </div>

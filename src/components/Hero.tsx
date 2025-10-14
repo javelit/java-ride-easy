@@ -10,16 +10,13 @@ const Hero = () => {
 
           <h1 className="whitespace-pre-line mt-0 text-gray-90 mb-6 col-start-1 col-end-13 sm:col-start-1 sm:col-end-13 xl:col-start-3 xl:col-end-11 text-5xl sm:text-7xl md:text-8xl md:leading-none font-bold">
             A faster way to build data apps in Java.</h1>
-          <p className="text-l sm:text-xl text-muted-foreground mb-2 max-w-3xl mx-auto">
-            or: <span className="text-primary font-semibold italic">Streamlit for the rest of us, the Java developers.</span>
-          </p>
 
           {/* Animated Tramway */}
           <AnimatedTramway />
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Skip the frontend hassle.<br/>
-            Spin up interactive web apps straight from Java.
+            Skip the frontend hassle. Skip the event-handling mess.<br/>
+            Turn a Java class into a web app in minutes.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
