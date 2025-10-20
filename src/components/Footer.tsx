@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <span className="text-2xl transform scale-x-[-1]">🚡</span>
-              <span className="text-xl font-bold text-foreground">Jeamlit</span>
+              <span className="text-xl font-bold text-foreground">Javelit</span>
             </div>
             <p className="text-muted-foreground">
               Build interactive data applications with Java in minutes.
@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="https://docs.jeamlit.io"
+                  href="https://docs.javelit.io"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center"
                 >
                   Documentation
@@ -31,7 +31,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://github.com/jeamlit/jeamlit"
+                  href="https://github.com/javelit/javelit"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center"
@@ -47,14 +47,14 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">About</h3>
             <p className="text-muted-foreground text-sm">
-              Jeamlit enables rapid prototyping and deployment of data applications in Java.
+              Javelit enables rapid prototyping and deployment of data applications in Java.
             </p>
           </div>
         </div>
         
         <div className="border-t border-border pt-4 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Jeamlit.
+            © 2025 Javelit.
           </p>
         </div>
       </div>

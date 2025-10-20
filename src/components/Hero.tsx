@@ -25,7 +25,7 @@ const Hero = () => {
               asChild
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-3"
             >
-              <a href="https://docs.jeamlit.io/get-started" className="flex items-center" target="_blank">
+              <a href="https://docs.javelit.io/get-started" className="flex items-center" target="_blank">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
@@ -38,7 +38,7 @@ const Hero = () => {
               className="text-lg px-8 py-3 border-primary/20"
             >
               <a 
-                href="https://github.com/jeamlit/jeamlit"
+                href="https://github.com/javelit/javelit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"

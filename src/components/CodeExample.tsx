@@ -3,7 +3,7 @@ import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@/components/ui/button';
 
 const CodeExample = () => {
-  const codeString = `import io.jeamlit.core.Jt;
+  const codeString = `import io.javelit.core.Jt;
 
 public class MyApp {
   public static void main(String[] args) {
@@ -97,7 +97,7 @@ public class MyApp {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Flexible deployment</h3>
-                <p className="text-xl text-muted-foreground">Run Jeamlit apps standalone or embed them into Spring, Quarkus, or any Java stack.</p>
+                <p className="text-xl text-muted-foreground">Run Javelit apps standalone or embed them into Spring, Quarkus, or any Java stack.</p>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ public class MyApp {
             size="lg" 
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8"
           >
-            <a href="https://docs.jeamlit.io" target="_blank">
+            <a href="https://docs.javelit.io" target="_blank">
               Get Started
             </a>
           </Button>

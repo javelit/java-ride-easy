@@ -8,19 +8,19 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <span className="text-2xl transform scale-x-[-1]">🚡</span>
-            <span className="text-xl font-bold text-foreground">Jeamlit</span>
+            <span className="text-xl font-bold text-foreground">Javelit</span>
           </div>
           
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <a
-              href="https://docs.jeamlit.io"
+              href="https://docs.javelit.io"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Documentation
             </a>
             <a
-              href="https://github.com/jeamlit/jeamlit"
+              href="https://github.com/javelit/javelit"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -34,7 +34,7 @@ const Header = () => {
             asChild
             className="bg-gradient-hero hover:shadow-glow transition-all duration-300"
           >
-            <a href="https://docs.jeamlit.io">
+            <a href="https://docs.javelit.io">
               Get Started
             </a>
           </Button>
