@@ -1,25 +1,9 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@/components/ui/button';
+import codeString from '@/assets/apps/MyApp.java?raw';
 
 const CodeExample = () => {
-  const codeString = `import io.javelit.core.Jt;
-
-public class MyApp {
-  public static void main(String[] args) {
-    double temp = Jt.slider(
-                    "Temperature °C").use();
-
-    if (temp > 30) {
-      Jt.markdown("🔥 **Too Hot!**").use();
-    } else if (temp < 10) {
-      Jt.markdown("❄️ **Too Cold!**").use();
-    } else {
-      Jt.text("✅ Perfect!").use();
-    }
-  }
-}`;
-
   return (
     <section className="pb-16 pt-8 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
@@ -105,11 +89,14 @@ public class MyApp {
 
         {/* Demo GIF */}
         <div className="mt-12 flex justify-center">
-          <img
+            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" style={{width: '60%', height: '300px', border: 0}} loading="lazy"></iframe>
+            {/*  TODO use as fallback if iframe fails
+            <img
             src="/demo_code.gif"
             alt="Demo of the app in action"
             className="rounded-lg shadow-soft max-w-full lg:max-w-2xl"
           />
+            */}
         </div>
 
         {/* Get Started CTA */}
