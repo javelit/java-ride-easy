@@ -1,9 +1,18 @@
+import { useState, useEffect } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@/components/ui/button';
 import codeString from '@/assets/apps/MyApp.java?raw';
 
 const CodeExample = () => {
+  const [isSafari, setIsSafari] = useState(false);
+
+  useEffect(() => {
+    // Detect Safari (but not Chrome which also contains "Safari" in user agent)
+    const safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    setIsSafari(safari);
+  }, []);
+
   return (
     <section className="pb-16 pt-8 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
@@ -86,16 +95,22 @@ const CodeExample = () => {
             </div>
           </div>
         </div>
-        {/* Demo GIF */}
+        {/* Demo */}
         <div className="mt-12 flex justify-center">
-            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" className="w-[100%] lg:w-[60%] h-[310px] border-0 outline-none" loading="lazy"></iframe>
-            {/*  TODO use as fallback if iframe fails
+          {isSafari ? (
             <img
-            src="/demo_code.gif"
-            alt="Demo of the app in action"
-            className="rounded-lg shadow-soft max-w-full lg:max-w-2xl"
-          />
-            */}
+              src="/demo_code.gif"
+              alt="Demo of the app in action"
+              className="rounded-lg shadow-soft max-w-full lg:max-w-2xl"
+            />
+          ) : (
+            <iframe
+              src="https://jbang-production-5e9a.up.railway.app/?embed=true"
+              allow="camera;microphone;clipboard-read;clipboard-write;"
+              className="w-[100%] lg:w-[60%] h-[310px] border-0 outline-none"
+              loading="lazy"
+            ></iframe>
+          )}
         </div>
 
         {/* Get Started CTA */}
