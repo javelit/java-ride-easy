@@ -61,7 +61,7 @@ const CodeExample = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">As simple as a script</h3>
-                <p className="text-xl text-muted-foreground">Break free from boilerplate. Your app is just your logic, running top-to-bottom. See changes instantly with live reloading.</p>
+                <p className="text-xl text-muted-foreground">Break free from boilerplate. Your app is just your logic, running top-to-bottom. See changes instantly with hot reloading.</p>
               </div>
             </div>
             
@@ -86,10 +86,9 @@ const CodeExample = () => {
             </div>
           </div>
         </div>
-
         {/* Demo GIF */}
         <div className="mt-12 flex justify-center">
-            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" style={{width: '60%', height: '300px', border: 0, outline: 0}} loading="lazy"></iframe>
+            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" className="w-[100%] lg:w-[60%] h-[310px] border-0 outline-none" loading="lazy"></iframe>
             {/*  TODO use as fallback if iframe fails
             <img
             src="/demo_code.gif"
