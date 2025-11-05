@@ -2,8 +2,9 @@ import io.javelit.core.Jt;
 
 public class MyApp {
     public static void main(String[] args) {
-        double temp = Jt.slider(
-                "Temperature °C").use();
+        double temp = Jt.slider("Temperature °C")
+                .max(55)
+                .use();
 
         if (temp > 30) {
             Jt.markdown("🔥 **Too Hot!**").use();
