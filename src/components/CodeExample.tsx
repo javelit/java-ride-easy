@@ -89,7 +89,7 @@ const CodeExample = () => {
 
         {/* Demo GIF */}
         <div className="mt-12 flex justify-center">
-            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" style={{width: '60%', height: '300px', border: 0}} loading="lazy"></iframe>
+            <iframe src="https://jbang-production-5e9a.up.railway.app/?embed=true" allow="camera;microphone;clipboard-read;clipboard-write;" style={{width: '60%', height: '300px', border: 0, outline: 0}} loading="lazy"></iframe>
             {/*  TODO use as fallback if iframe fails
             <img
             src="/demo_code.gif"
