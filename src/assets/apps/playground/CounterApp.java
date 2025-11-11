@@ -6,17 +6,17 @@ import io.javelit.core.Jt;
 
 public class CounterApp {
 
-    public static void main(String[] args) {
-        Jt.markdown("""
-                    Use `Jt.sessionState()` to maintain states. \s
-                    """
-        ).use();
+  public static void main(String[] args) {
+    Jt.markdown("""
+          Use `Jt.sessionState()` to maintain states. \s
+          """
+    ).use();
 
-        if (Jt.button("Click me").use()) {
-            Jt.sessionState().computeInt("count", (k, v) -> v +1);
-        }
-
-        int count = Jt.sessionState().computeIfAbsentInt("count", k -> 0);
-        Jt.markdown("Count of button clicks: **%s**".formatted(count)).use();
+    if (Jt.button("Click me").use()) {
+      Jt.sessionState().computeInt("count", (k, v) -> v +1);
     }
+
+    int count = Jt.sessionState().computeIfAbsentInt("count", k -> 0);
+    Jt.markdown("Count of button clicks: **%s**".formatted(count)).use();
+  }
 }
