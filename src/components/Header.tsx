@@ -18,13 +18,13 @@ const Header = () => {
                     <nav className="hidden md:flex items-center space-x-6">
                         <Link
                             to="/playground"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            className="hover:text-muted-foreground transition-colors"
                         >
                             Playground
                         </Link>
                         <a
                             href="https://docs.javelit.io"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            className="hover:text-muted-foreground transition-colors"
                         >
                             Documentation
                         </a>
@@ -32,7 +32,7 @@ const Header = () => {
                             href="https://github.com/javelit/javelit"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            className="hover:text-muted-foreground transition-colors"
                         >
                             GitHub
                         </a>

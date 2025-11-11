@@ -66,8 +66,8 @@ const Playground = () => {
               <TabsContent key={app.name} value={app.name.toLowerCase()}>
                 <div className="grid lg:grid-cols-2 gap-6">
                   {/* Left: Code */}
-                  <div className="relative">
-                    <div className="bg-[hsl(var(--code-bg))] p-6 rounded-xl shadow-soft overflow-auto" style={{ height: '46rem' }}>
+                  <div className="relative w-full min-w-0">
+                    <div className="w-full bg-[hsl(var(--code-bg))] p-6 rounded-xl shadow-soft overflow-auto" style={{ height: '48rem' }}>
                       <SyntaxHighlighter
                         language="java"
                         style={oneDark}
@@ -92,7 +92,7 @@ const Playground = () => {
                   </div>
 
                   {/* Right: Iframe */}
-                  <div className="relative">
+                  <div className="relative w-full min-w-0">
                     {/* Loading overlay */}
                     {loadingStates[app.name] !== false && (
                       <div className="absolute inset-0 flex items-center justify-center bg-muted rounded-xl z-10">
@@ -107,7 +107,7 @@ const Playground = () => {
                       src={`${app.url}?embed=true`}
                       allow="camera;microphone;clipboard-read;clipboard-write;"
                       className="w-full rounded-xl shadow-soft border-0 outline-none"
-                      style={{ height: '46rem' }}
+                      style={{ height: '48rem' }}
                       onLoad={() => setLoadingStates(prev => ({...prev, [app.name]: false}))}
                     ></iframe>
                   </div>
