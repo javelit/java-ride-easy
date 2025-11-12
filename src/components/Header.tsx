@@ -23,6 +23,13 @@ const Header = () => {
                             Playground
                         </Link>
                         <a
+                            href="https://docs.javelit.io/#latest-news-from-the-dev-diary"
+                            target="_blank"
+                            className="hover:text-muted-foreground transition-colors"
+                        >
+                            News
+                        </a>
+                        <a
                             href="https://docs.javelit.io"
                             className="hover:text-muted-foreground transition-colors"
                         >
@@ -43,7 +50,7 @@ const Header = () => {
                         asChild
                         className="bg-gradient-hero hover:shadow-glow transition-all duration-300"
                     >
-                        <a href="https://docs.javelit.io">
+                        <a href="https://docs.javelit.io/get-started" target={"_blank"}>
                             Get Started
                         </a>
                     </Button>
