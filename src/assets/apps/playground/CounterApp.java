@@ -8,12 +8,12 @@ public class CounterApp {
 
   public static void main(String[] args) {
     Jt.markdown("""
-          Use `Jt.sessionState()` to maintain states. \s
-          """
+                Use `Jt.sessionState()` to maintain states. \s
+                """
     ).use();
 
     if (Jt.button("Click me").use()) {
-      Jt.sessionState().computeInt("count", (k, v) -> v +1);
+      Jt.sessionState().computeInt("count", (k, v) -> v + 1);
     }
 
     int count = Jt.sessionState().computeIfAbsentInt("count", k -> 0);

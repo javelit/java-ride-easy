@@ -52,8 +52,8 @@ public class ChartsApp {
         .addYAxis();
     for (String user : selectedUsers) {
       chart.addSeries(new LineSeries()
-                   .setName(user)
-                   .setData(t.doubleColumn(user).asDoubleArray()));
+                          .setName(user)
+                          .setData(t.doubleColumn(user).asDoubleArray()));
     }
 
     var tabs = Jt.tabs(List.of("Chart", "Dataframe")).use();

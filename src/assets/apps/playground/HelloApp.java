@@ -10,7 +10,7 @@ public class HelloApp {
     Jt.markdown(
         """ 
         This is a playground for you to try Javelit apps and have fun.
-      
+        
         **There's so much you can build!**
         
         We prepared a few examples for you to get started. Just
